@@ -1,0 +1,23 @@
+# Donjon — Les Portes des Enfers
+# Config-driven : coordonnées d'entrée PLACEHOLDER, à remplacer par les vraies.
+
+id: gates_underworld
+title: "Les Portes des Enfers"
+difficulty: hard
+
+entrance:
+  world: world
+  x: 0.5
+  y: 100.0
+  z: 0.5
+  yaw: 0.0
+  pitch: 0.0
+
+cooldown_seconds: 5400
+
+rewards:
+  xp: 1100
+  drachmes: 320
+  reputation_faction: hades
+  reputation: 70
+  title: "Celui qui revint des Enfers"

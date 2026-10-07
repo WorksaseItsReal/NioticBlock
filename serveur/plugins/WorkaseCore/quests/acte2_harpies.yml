@@ -1,0 +1,21 @@
+# Quête — Le Ciel des Harpies
+# Fichier chargé depuis plugins/WorkaseCore/quests/
+
+id: acte2_harpies
+name: "Le Ciel des Harpies"
+description: >
+  Les harpies volent les vivres des marchands de Corinthe.
+  Ramène le calme dans le ciel.
+auto_start: false
+
+objectives:
+  - id: kill_harpies
+    type: kill
+    target: Workase_Harpie
+    amount: 8
+    description: "Abats 8 harpies"
+
+rewards:
+  xp: 300
+  drachmes: 140
+  title: "Chasseur de Harpies"

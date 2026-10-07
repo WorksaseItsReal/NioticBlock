@@ -1,0 +1,9 @@
+id: lance_ares
+display_name: "<gold><bold>Lance d'Arès</bold>"
+material: NETHERITE_SWORD
+rarity: LEGENDAIRE
+lore:
+  - "<gray>Elle a soif de batailles."
+  - ""
+  - "<dark_gray>Rareté: <yellow>Légendaire"
+  - "<dark_gray>Stub — effets à venir"

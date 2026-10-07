@@ -1,0 +1,8 @@
+# Boss — Grotte de Polyphème (spawn MythicMobs : Workase_Cyclops)
+
+id: cyclops
+display_name: Polyphème le Cyclope
+description: >
+  Fils de Poséidon, berger géant de l'île des Cyclopes.
+  Il lance des rochers et écrase ceux qui s'approchent.
+mythic_mob_id: Workase_Cyclops

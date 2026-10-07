@@ -1,0 +1,25 @@
+# Quête — La Descente aux Enfers
+# Fichier chargé depuis plugins/WorkaseCore/quests/
+
+id: acte5_enfers
+name: "La Descente aux Enfers"
+description: >
+  Franchis les portes d'Hadès, disperse ses ombres et fais taire Cerbère.
+auto_start: false
+
+objectives:
+  - id: kill_shades
+    type: kill
+    target: Workase_Ombre_Hades
+    amount: 15
+    description: "Disperse 15 ombres d'Hadès"
+  - id: kill_cerberus
+    type: kill
+    target: Workase_Cerberus
+    amount: 1
+    description: "Vaincs Cerbère"
+
+rewards:
+  xp: 1600
+  drachmes: 500
+  title: "Revenu des Enfers"

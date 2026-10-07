@@ -1,0 +1,151 @@
+# ============================================================
+# WORKASE — L'Odyssée des Dieux : objets
+# Don en console : mm items give <joueur> <id> [quantité]
+# Les couleurs suivent la rareté : &a commun, &9 rare, &5 épique, &6 légendaire.
+# ============================================================
+
+# --- Consommables ---------------------------------------------
+Workase_Ambroisie:
+  Id: GOLDEN_APPLE
+  Display: '&6Ambroisie'
+  Lore:
+  - '&7La nourriture des dieux.'
+  - '&7Un mortel qui y goûte en garde le souvenir.'
+  - ''
+  - '&8Rareté : &9Rare'
+
+Workase_Nectar:
+  Id: HONEY_BOTTLE
+  Display: '&6Nectar de l''Olympe'
+  Lore:
+  - '&7La boisson des immortels.'
+  - ''
+  - '&8Rareté : &9Rare'
+
+# --- Trophées de boss (monnaie d'artisanat / quêtes) ----------
+Workase_Ecaille_Meduse:
+  Id: PRISMARINE_SHARD
+  Display: '&2Écaille de Méduse'
+  Lore:
+  - '&7Froide comme la pierre qu''elle engendre.'
+  - ''
+  - '&8Trophée de boss'
+
+Workase_Corne_Minotaure:
+  Id: GOAT_HORN
+  Display: '&6Corne du Minotaure'
+  Lore:
+  - '&7Arrachée au Gardien du Labyrinthe.'
+  - ''
+  - '&8Trophée de boss'
+
+Workase_Oeil_Cyclope:
+  Id: ENDER_EYE
+  Display: '&8Œil de Polyphème'
+  Lore:
+  - '&7Il voit encore, dit-on.'
+  - ''
+  - '&8Trophée de boss'
+
+Workase_Croc_Cerbere:
+  Id: BONE
+  Display: '&4Croc de Cerbère'
+  Lore:
+  - '&7Encore tiède du feu du Tartare.'
+  - ''
+  - '&8Trophée de boss'
+
+Workase_Sang_Hydre:
+  Id: DRAGON_BREATH
+  Display: '&3Sang de l''Hydre'
+  Lore:
+  - '&7Un poison dont même les dieux se méfient.'
+  - ''
+  - '&8Trophée de boss'
+
+Workase_Fragment_Foudre:
+  Id: AMETHYST_SHARD
+  Display: '&eFragment de foudre'
+  Lore:
+  - '&7Un éclat du courroux de Zeus.'
+  - ''
+  - '&8Trophée de boss'
+
+Workase_Plume_Harpie:
+  Id: FEATHER
+  Display: '&ePlume de Harpie'
+  Lore:
+  - '&7Elle vibre au moindre souffle de vent.'
+
+# --- Armes et armures légendaires -----------------------------
+Workase_Arc_Persee:
+  Id: BOW
+  Display: '&5&lArc de Persée'
+  Enchantments:
+  - POWER:5
+  - PUNCH:1
+  - UNBREAKING:3
+  Lore:
+  - '&7Le héros qui trancha la tête de la Gorgone.'
+  - ''
+  - '&8Rareté : &5Épique'
+
+Workase_Hache_Labrys:
+  Id: NETHERITE_AXE
+  Display: '&5&lLabrys de Crète'
+  Enchantments:
+  - SHARPNESS:5
+  - UNBREAKING:3
+  Lore:
+  - '&7La hache double des palais crétois.'
+  - ''
+  - '&8Rareté : &5Épique'
+
+Workase_Marteau_Hephaistos:
+  Id: NETHERITE_PICKAXE
+  Display: '&6&lMarteau d''Héphaïstos'
+  Enchantments:
+  - EFFICIENCY:5
+  - FORTUNE:3
+  - UNBREAKING:3
+  Lore:
+  - '&7L''outil du dieu forgeron.'
+  - ''
+  - '&8Rareté : &6Légendaire'
+
+Workase_Casque_Hades:
+  Id: NETHERITE_HELMET
+  Display: '&6&lCasque d''Hadès'
+  Enchantments:
+  - PROTECTION:4
+  - UNBREAKING:3
+  Lore:
+  - '&7Le casque qui rend invisible son porteur.'
+  - ''
+  - '&8Rareté : &6Légendaire'
+
+Workase_Fleches_Heracles:
+  Id: CROSSBOW
+  Display: '&6&lArbalète d''Héraclès'
+  Enchantments:
+  - MULTISHOT:1
+  - QUICK_CHARGE:3
+  - UNBREAKING:3
+  Lore:
+  - '&7Trempée dans le sang de l''Hydre.'
+  - ''
+  - '&8Rareté : &6Légendaire'
+
+Workase_Foudre_Zeus:
+  Id: TRIDENT
+  Display: '&e&lFoudre de Zeus'
+  Enchantments:
+  - CHANNELING:1
+  - LOYALTY:3
+  - IMPALING:5
+  - UNBREAKING:3
+  Lore:
+  - '&7L''arme du roi des dieux.'
+  - '&7Arrachée aux griffes de Typhon.'
+  - ''
+  - '&8Rareté : &6&lMythique'

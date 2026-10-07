@@ -1,0 +1,103 @@
+# ============================================================
+# WORKASE — L'Odyssée des Dieux : créatures courantes et sbires
+# kosmos_rat est la cible de la quête WorkaseCore "example_welcome".
+# ============================================================
+
+kosmos_rat:
+  Type: SILVERFISH
+  Display: '&7Rat du port'
+  Health: 8
+  Damage: 2
+  Options:
+    MovementSpeed: 0.3
+    PreventOtherDrops: true
+  Drops:
+  - exp 5
+
+Workase_Serpent:
+  Type: CAVE_SPIDER
+  Display: '&2Serpent de Méduse'
+  Health: 20
+  Damage: 3
+  Options:
+    PreventOtherDrops: true
+  Skills:
+  - potion{type=POISON;duration=60;level=0} @target ~onAttack 0.5
+  Drops:
+  - exp 10
+
+Workase_Satyre:
+  Type: VINDICATOR
+  Display: '&aSatyre ivre'
+  Health: 40
+  Damage: 6
+  Options:
+    MovementSpeed: 0.3
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  Equipment:
+  - STONE_AXE HAND
+  Skills:
+  - potion{type=NAUSEA;duration=80;level=0} @target ~onAttack 0.3
+  Drops:
+  - exp 20
+  - Workase_Drop_Commun 1 1
+
+Workase_Hoplite_Mort:
+  Type: SKELETON
+  Display: '&fHoplite déchu'
+  Health: 50
+  Damage: 7
+  Armor: 6
+  Options:
+    PreventSunburn: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  Equipment:
+  - IRON_HELMET HEAD
+  - IRON_CHESTPLATE CHEST
+  - IRON_SWORD HAND
+  - SHIELD OFFHAND
+  Drops:
+  - exp 25
+  - Workase_Drop_Commun 1 1
+
+Workase_Harpie:
+  Type: PHANTOM
+  Display: '&eHarpie'
+  Health: 30
+  Damage: 5
+  Options:
+    PreventSunburn: true
+    PreventOtherDrops: true
+  Drops:
+  - exp 20
+  - Workase_Plume_Harpie 1 0.5
+
+Workase_Ombre_Hades:
+  Type: STRAY
+  Display: '&8Ombre d''Hadès'
+  Health: 45
+  Damage: 6
+  Options:
+    PreventSunburn: true
+    PreventOtherDrops: true
+  Skills:
+  - potion{type=BLINDNESS;duration=40;level=0} @target ~onAttack 0.25
+  Drops:
+  - exp 25
+  - Workase_Drop_Commun 1 1
+
+Workase_Sanglier_Erymanthe:
+  Type: RAVAGER
+  Display: '&6Sanglier d''Érymanthe'
+  Health: 120
+  Damage: 10
+  Armor: 4
+  Options:
+    MovementSpeed: 0.28
+    PreventOtherDrops: true
+  Drops:
+  - exp 60
+  - Workase_Drop_Commun 1 1
+  - Workase_Drop_Boss_Rare 1 0.1

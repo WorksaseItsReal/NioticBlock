@@ -1,0 +1,59 @@
+# ============================================================
+# WORKASE — L'Odyssée des Dieux : tables de butin
+# Format d'une ligne : <objet> <quantité> <chance 0-1>
+# Les objets Workase_* sont définis dans items/Olympe_Items.yml.
+# ============================================================
+
+Workase_Drop_Commun:
+  Drops:
+  - IRON_NUGGET 1to4 0.6
+  - GOLD_NUGGET 1to3 0.4
+  - Workase_Ambroisie 1 0.03
+
+Workase_Drop_Boss_Rare:
+  Drops:
+  - GOLD_INGOT 4to8 1
+  - DIAMOND 1to2 0.5
+  - Workase_Ambroisie 1to2 0.6
+  - Workase_Nectar 1 0.3
+
+Workase_Drop_Boss_Medusa:
+  Drops:
+  - Workase_Drop_Boss_Rare 1 1
+  - Workase_Ecaille_Meduse 1to3 1
+  - Workase_Arc_Persee 1 0.08
+
+Workase_Drop_Boss_Minotaur:
+  Drops:
+  - Workase_Drop_Boss_Rare 1 1
+  - Workase_Corne_Minotaure 1 1
+  - Workase_Hache_Labrys 1 0.08
+
+Workase_Drop_Boss_Cyclops:
+  Drops:
+  - Workase_Drop_Boss_Rare 1 1
+  - DIAMOND 2to4 1
+  - Workase_Oeil_Cyclope 1 1
+  - Workase_Marteau_Hephaistos 1 0.06
+
+Workase_Drop_Boss_Cerberus:
+  Drops:
+  - Workase_Drop_Boss_Rare 1 1
+  - NETHERITE_SCRAP 1to2 0.6
+  - Workase_Croc_Cerbere 1to3 1
+  - Workase_Casque_Hades 1 0.05
+
+Workase_Drop_Boss_Hydra:
+  Drops:
+  - Workase_Drop_Boss_Rare 1 1
+  - NETHERITE_SCRAP 1to3 0.8
+  - Workase_Sang_Hydre 1to2 1
+  - Workase_Fleches_Heracles 1 0.06
+
+Workase_Drop_Boss_Typhon:
+  Drops:
+  - Workase_Drop_Boss_Rare 1 1
+  - NETHERITE_INGOT 1 0.5
+  - Workase_Ambroisie 3to5 1
+  - Workase_Fragment_Foudre 1to2 1
+  - Workase_Foudre_Zeus 1 0.03

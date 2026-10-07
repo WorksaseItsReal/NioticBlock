@@ -1,0 +1,7 @@
+id: demeter
+display_name: Déméter
+domain: Moissons et saisons
+personality: >
+  Quand Elle pleure, la terre se tait et rien ne pousse. Les fermiers
+  qui L'honorent récoltent deux fois ; les autres apprennent la faim.
+discovered_by_default: false

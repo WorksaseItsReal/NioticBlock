@@ -1,0 +1,20 @@
+# Quête — Personne
+# Fichier chargé depuis plugins/WorkaseCore/quests/
+
+id: acte4_cyclope
+name: "Personne"
+description: >
+  Rusé comme Ulysse, échappe à Polyphème — puis abats-le.
+auto_start: false
+
+objectives:
+  - id: kill_cyclops
+    type: kill
+    target: Workase_Cyclops
+    amount: 1
+    description: "Vaincs Polyphème"
+
+rewards:
+  xp: 1000
+  drachmes: 350
+  title: "Personne"

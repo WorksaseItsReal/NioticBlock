@@ -1,0 +1,123 @@
+# WORKASE — Réputations (villes, factions, dieux)
+# Version étendue : les 12 Olympiens + Hadès, nouvelles cités et régions.
+# Les entrées d'origine (athenes, sparte, corinthe, crete, kosmos, zeus, athena, poseidon) sont conservées à l'identique.
+
+levels:
+  inconnu:
+    name: Inconnu
+    min-score: 0
+  tolere:
+    name: Toléré
+    min-score: 25
+  connu:
+    name: Connu
+    min-score: 75
+  respecte:
+    name: Respecté
+    min-score: 150
+  honore:
+    name: Honoré
+    min-score: 300
+  heros:
+    name: Héros
+    min-score: 600
+  legende:
+    name: Légende
+    min-score: 1200
+
+factions:
+  # --- Cités ---
+  athenes:
+    name: Athènes
+    type: city
+    description: Cité de la sagesse, du commerce et des temples.
+  sparte:
+    name: Sparte
+    type: city
+    description: Forteresse des guerriers et de la discipline.
+  corinthe:
+    name: Corinthe
+    type: city
+    description: Port marchand au carrefour des mers.
+  thebes:
+    name: Thèbes
+    type: city
+    description: Cité aux sept portes, berceau des héros maudits.
+  argos:
+    name: Argos
+    type: city
+    description: Cité d'Héra, voisine des marais de Lerne.
+  delphes:
+    name: Delphes
+    type: city
+    description: Sanctuaire d'Apollon, où l'Oracle révèle le destin.
+  # --- Régions ---
+  crete:
+    name: Crète
+    type: region
+    description: Île des palais, des ruines et du Labyrinthe.
+  kosmos:
+    name: Kosmos
+    type: region
+    description: Île de départ, où les étrangers prennent pied.
+  enfers:
+    name: Les Enfers
+    type: region
+    description: Royaume souterrain des morts, gardé par Cerbère.
+  # --- Dieux ---
+  zeus:
+    name: Zeus
+    type: god
+    description: Faveur du roi de l'Olympe.
+  athena:
+    name: Athéna
+    type: god
+    description: Faveur de la déesse de la sagesse.
+  poseidon:
+    name: Poséidon
+    type: god
+    description: Faveur du maître des mers.
+  hera:
+    name: Héra
+    type: god
+    description: Faveur de la reine de l'Olympe.
+  hades:
+    name: Hadès
+    type: god
+    description: Faveur du seigneur des Enfers.
+  ares:
+    name: Arès
+    type: god
+    description: Faveur du dieu de la guerre.
+  apollo:
+    name: Apollon
+    type: god
+    description: Faveur du dieu de la lumière et des arts.
+  artemis:
+    name: Artémis
+    type: god
+    description: Faveur de la déesse de la chasse.
+  hermes:
+    name: Hermès
+    type: god
+    description: Faveur du messager des dieux.
+  hephaestus:
+    name: Héphaïstos
+    type: god
+    description: Faveur du dieu forgeron.
+  aphrodite:
+    name: Aphrodite
+    type: god
+    description: Faveur de la déesse de l'amour.
+  demeter:
+    name: Déméter
+    type: god
+    description: Faveur de la déesse des moissons.
+  dionysos:
+    name: Dionysos
+    type: god
+    description: Faveur du dieu du vin et de la fête.
+  hestia:
+    name: Hestia
+    type: god
+    description: Faveur de la déesse du foyer.

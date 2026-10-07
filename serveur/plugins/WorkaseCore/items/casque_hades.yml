@@ -1,0 +1,9 @@
+id: casque_hades
+display_name: "<gold><bold>Casque d'Hadès</bold>"
+material: NETHERITE_HELMET
+rarity: LEGENDAIRE
+lore:
+  - "<gray>Le casque qui rend invisible son porteur."
+  - ""
+  - "<dark_gray>Rareté: <yellow>Légendaire"
+  - "<dark_gray>Stub — effets à venir"

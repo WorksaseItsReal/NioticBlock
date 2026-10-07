@@ -1,0 +1,8 @@
+# Boss — Labyrinthe de Crète (spawn MythicMobs : Workase_Minotaur)
+
+id: minotaur
+display_name: Minotaure
+description: >
+  Créature mi-homme mi-taureau, gardienne des couloirs du labyrinthe.
+  Charge les imprudents et entre en rage quand il faiblit.
+mythic_mob_id: Workase_Minotaur

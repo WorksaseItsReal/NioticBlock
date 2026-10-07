@@ -1,0 +1,20 @@
+# Quête — Le Fil d'Ariane
+# Fichier chargé depuis plugins/WorkaseCore/quests/
+
+id: acte3_minotaure
+name: "Le Fil d'Ariane"
+description: >
+  Entre dans le Labyrinthe de Crète et mets fin au règne du Minotaure.
+auto_start: false
+
+objectives:
+  - id: kill_minotaur
+    type: kill
+    target: Workase_Minotaur
+    amount: 1
+    description: "Vaincs le Minotaure"
+
+rewards:
+  xp: 800
+  drachmes: 300
+  title: "Fil d'Ariane"

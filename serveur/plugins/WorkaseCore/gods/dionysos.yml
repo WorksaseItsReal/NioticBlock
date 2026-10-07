@@ -1,0 +1,7 @@
+id: dionysos
+display_name: Dionysos
+domain: Vin, fête et folie
+personality: >
+  Il rit plus fort que tous les autres dieux, et c'est ce qui Le rend dangereux.
+  Ses fidèles trouvent la joie — ou se perdent dans la démesure.
+discovered_by_default: false

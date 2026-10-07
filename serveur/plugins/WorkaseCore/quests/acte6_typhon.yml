@@ -1,0 +1,20 @@
+# Quête — Le Crépuscule de Typhon
+# Fichier chargé depuis plugins/WorkaseCore/quests/
+
+id: acte6_typhon
+name: "Le Crépuscule de Typhon"
+description: >
+  Typhon s'est libéré du Mont Etna. L'Olympe tout entier compte sur toi.
+auto_start: false
+
+objectives:
+  - id: kill_typhon
+    type: kill
+    target: Workase_Typhon
+    amount: 1
+    description: "Vaincs Typhon"
+
+rewards:
+  xp: 4000
+  drachmes: 1500
+  title: "Sauveur de l'Olympe"

@@ -1,0 +1,9 @@
+id: marteau_hephaistos
+display_name: "<gold><bold>Marteau d'Héphaïstos</bold>"
+material: NETHERITE_PICKAXE
+rarity: LEGENDAIRE
+lore:
+  - "<gray>L'outil du dieu forgeron."
+  - ""
+  - "<dark_gray>Rareté: <yellow>Légendaire"
+  - "<dark_gray>Stub — effets à venir"

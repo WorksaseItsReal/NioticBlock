@@ -1,0 +1,8 @@
+# Boss — Portes des Enfers (spawn MythicMobs : Workase_Cerberus)
+
+id: cerberus
+display_name: Cerbère
+description: >
+  Le chien à trois têtes qui garde les portes des Enfers.
+  Ses flammes et ses ombres protègent le royaume d'Hadès.
+mythic_mob_id: Workase_Cerberus

@@ -1,0 +1,10 @@
+id: sandales_hermes
+display_name: "<gold><bold>Sandales ailées d'Hermès</bold>"
+material: NETHERITE_BOOTS
+rarity: LEGENDAIRE
+lore:
+  - "<gray>Le messager des dieux"
+  - "<gray>ne touche jamais vraiment le sol."
+  - ""
+  - "<dark_gray>Rareté: <yellow>Légendaire"
+  - "<dark_gray>Stub — effets à venir"

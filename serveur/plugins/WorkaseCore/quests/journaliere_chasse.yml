@@ -1,0 +1,20 @@
+# Quête — Chasse du Jour
+# Fichier chargé depuis plugins/WorkaseCore/quests/
+
+id: journaliere_chasse
+name: "Chasse du Jour"
+description: >
+  Les cités paient bien ceux qui gardent les routes sûres.
+auto_start: false
+
+objectives:
+  - id: kill_mix
+    type: kill
+    target: Workase_Satyre
+    amount: 10
+    description: "Abats 10 satyres"
+
+rewards:
+  xp: 80
+  drachmes: 40
+  title: ""

@@ -1,0 +1,10 @@
+id: thyrse_dionysos
+display_name: "<dark_purple><bold>Thyrse de Dionysos</bold>"
+material: BLAZE_ROD
+rarity: EPIQUE
+lore:
+  - "<gray>Un bâton couronné de lierre"
+  - "<gray>qui sent le vin et la folie."
+  - ""
+  - "<dark_gray>Rareté: <light_purple>Épique"
+  - "<dark_gray>Stub — effets à venir"

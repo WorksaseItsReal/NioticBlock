@@ -1,0 +1,23 @@
+# Donjon — L'Antre de la Gorgone
+# Config-driven : coordonnées d'entrée PLACEHOLDER, à remplacer par les vraies.
+
+id: lair_medusa
+title: "L'Antre de la Gorgone"
+difficulty: medium
+
+entrance:
+  world: world
+  x: 0.5
+  y: 100.0
+  z: 0.5
+  yaw: 0.0
+  pitch: 0.0
+
+cooldown_seconds: 1800
+
+rewards:
+  xp: 250
+  drachmes: 80
+  reputation_faction: athenes
+  reputation: 30
+  title: "Tueur de Gorgone"

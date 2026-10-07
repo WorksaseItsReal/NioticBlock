@@ -1,0 +1,21 @@
+# Quête — Le Sanglier d'Érymanthe
+# Fichier chargé depuis plugins/WorkaseCore/quests/
+
+id: acte2_sanglier
+name: "Le Sanglier d'Érymanthe"
+description: >
+  Le quatrième travail d'Héraclès t'attend.
+  La bête ravage les vergers de Déméter.
+auto_start: false
+
+objectives:
+  - id: kill_boar
+    type: kill
+    target: Workase_Sanglier_Erymanthe
+    amount: 1
+    description: "Terrasse le sanglier d'Érymanthe"
+
+rewards:
+  xp: 400
+  drachmes: 180
+  title: "Émule d'Héraclès"

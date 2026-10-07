@@ -1,0 +1,10 @@
+id: foudre_zeus
+display_name: "<yellow><bold>Foudre de Zeus</bold>"
+material: TRIDENT
+rarity: MYTHIQUE
+lore:
+  - "<gray>L'arme du roi des dieux,"
+  - "<gray>arrachée aux griffes de Typhon."
+  - ""
+  - "<dark_gray>Rareté: <gold><bold>Mythique"
+  - "<dark_gray>Stub — effets à venir"

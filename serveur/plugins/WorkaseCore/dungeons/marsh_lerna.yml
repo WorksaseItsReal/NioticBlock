@@ -1,0 +1,23 @@
+# Donjon — Les Marais de Lerne
+# Config-driven : coordonnées d'entrée PLACEHOLDER, à remplacer par les vraies.
+
+id: marsh_lerna
+title: "Les Marais de Lerne"
+difficulty: hard
+
+entrance:
+  world: world
+  x: 0.5
+  y: 100.0
+  z: 0.5
+  yaw: 0.0
+  pitch: 0.0
+
+cooldown_seconds: 5400
+
+rewards:
+  xp: 900
+  drachmes: 260
+  reputation_faction: argos
+  reputation: 60
+  title: "Vainqueur de l'Hydre"

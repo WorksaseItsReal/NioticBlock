@@ -1,0 +1,8 @@
+# Boss final — Mont Etna (spawn MythicMobs : Workase_Typhon)
+
+id: typhon
+display_name: Typhon
+description: >
+  Le plus terrible des monstres, ennemi juré de Zeus.
+  Boss final de l'Odyssée des Dieux.
+mythic_mob_id: Workase_Typhon

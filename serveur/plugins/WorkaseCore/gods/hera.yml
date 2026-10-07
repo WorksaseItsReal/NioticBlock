@@ -1,0 +1,7 @@
+id: hera
+display_name: Héra
+domain: Mariage et royauté
+personality: >
+  Reine de l'Olympe, Elle n'oublie ni un serment rompu ni une offense faite
+  aux siens. Sa faveur ouvre les portes des palais ; sa colère, celles de l'exil.
+discovered_by_default: false

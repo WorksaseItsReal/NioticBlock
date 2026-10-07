@@ -1,0 +1,20 @@
+# Quête — Les Têtes de l'Hydre
+# Fichier chargé depuis plugins/WorkaseCore/quests/
+
+id: acte4_hydre
+name: "Les Têtes de l'Hydre"
+description: >
+  Le deuxième travail d'Héraclès : frappe plus vite qu'elle ne repousse.
+auto_start: false
+
+objectives:
+  - id: kill_hydra
+    type: kill
+    target: Workase_Hydra
+    amount: 1
+    description: "Vaincs l'Hydre de Lerne"
+
+rewards:
+  xp: 1200
+  drachmes: 400
+  title: "Fléau de Lerne"

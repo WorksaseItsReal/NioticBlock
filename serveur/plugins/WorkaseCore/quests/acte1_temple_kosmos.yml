@@ -1,0 +1,31 @@
+# Quête — Les Offrandes du Temple
+# Fichier chargé depuis plugins/WorkaseCore/quests/
+
+id: acte1_temple_kosmos
+name: "Les Offrandes du Temple"
+description: >
+  Le temple de Kosmos attend les offrandes des nouveaux venus.
+  Montre aux dieux que tu es digne de leur regard.
+auto_start: false
+
+objectives:
+  - id: visit_temple
+    type: visit
+    target: kosmos_temple
+    amount: 1
+    description: "Rends-toi au temple de Kosmos"
+  - id: visit_market
+    type: visit
+    target: kosmos_market
+    amount: 1
+    description: "Passe par le marché de Kosmos"
+  - id: kill_satyrs
+    type: kill
+    target: Workase_Satyre
+    amount: 5
+    description: "Chasse 5 satyres ivres"
+
+rewards:
+  xp: 120
+  drachmes: 60
+  title: "Fidèle de Kosmos"

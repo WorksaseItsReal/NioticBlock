@@ -1,0 +1,7 @@
+id: hestia
+display_name: Hestia
+domain: Foyer et hospitalité
+personality: >
+  La plus discrète des Olympiens. Elle veille sur chaque feu allumé
+  et sur ceux qui accueillent l'étranger. Ne La trahissez jamais à votre table.
+discovered_by_default: false

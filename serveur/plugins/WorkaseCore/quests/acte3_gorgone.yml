@@ -1,0 +1,20 @@
+# Quête — La Tête de la Gorgone
+# Fichier chargé depuis plugins/WorkaseCore/quests/
+
+id: acte3_gorgone
+name: "La Tête de la Gorgone"
+description: >
+  Comme Persée avant toi, affronte Méduse sans croiser son regard.
+auto_start: false
+
+objectives:
+  - id: kill_medusa
+    type: kill
+    target: Workase_Medusa
+    amount: 1
+    description: "Vaincs Méduse"
+
+rewards:
+  xp: 600
+  drachmes: 250
+  title: "Héritier de Persée"

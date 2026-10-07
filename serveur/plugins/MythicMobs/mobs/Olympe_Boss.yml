@@ -1,0 +1,179 @@
+# ============================================================
+# WORKASE — L'Odyssée des Dieux : BOSS mythologiques
+# Les IDs Workase_* sont référencés par plugins/WorkaseCore/bosses/*.yml
+# Compétences : skills/Olympe_Skills.yml — Butins : droptables/Olympe_Drops.yml
+# Invocation de test (console) : mm mobs spawn Workase_Medusa 1 world,0,100,0
+# ============================================================
+
+Workase_Medusa:
+  Type: WITCH
+  Display: '&2&lMéduse &7— la Gorgone'
+  Health: 600
+  Damage: 9
+  Armor: 6
+  BossBar:
+    Enabled: true
+    Title: '&2&lMéduse'
+    Range: 48
+    Color: GREEN
+    Style: SEGMENTED_10
+  Options:
+    MovementSpeed: 0.24
+    KnockbackResistance: 0.6
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    Despawn: false
+    FollowRange: 32
+  Skills:
+  - 'message{m="&2Méduse &7: &oRegarde-moi, mortel... une dernière fois."} @PlayersInRadius{r=40} ~onSpawn'
+  - skill{s=Workase_Medusa_Gaze} @PlayersInRadius{r=14} ~onTimer:200
+  - skill{s=Workase_Medusa_Serpents} @self ~onDamaged 0.12
+  - message{m="&2Méduse &7s'effondre. Son regard s'éteint enfin."} @PlayersInRadius{r=40} ~onDeath
+  Drops:
+  - exp 400
+  - Workase_Drop_Boss_Medusa 1 1
+
+Workase_Minotaur:
+  Type: RAVAGER
+  Display: '&6&lMinotaure &7— Gardien du Labyrinthe'
+  Health: 900
+  Damage: 14
+  Armor: 10
+  BossBar:
+    Enabled: true
+    Title: '&6&lMinotaure'
+    Range: 48
+    Color: RED
+    Style: SEGMENTED_12
+  Options:
+    MovementSpeed: 0.32
+    KnockbackResistance: 1.0
+    PreventOtherDrops: true
+    Despawn: false
+    FollowRange: 40
+  Skills:
+  - message{m="&6Le Minotaure &7mugit dans les couloirs du Labyrinthe..."} @PlayersInRadius{r=48} ~onSpawn
+  - skill{s=Workase_Minotaur_Charge} @NearestPlayer{r=20} ~onTimer:160
+  - skill{s=Workase_Minotaur_Rage} @self ~onDamaged
+  - message{m="&6Le Minotaure &7tombe. Le Labyrinthe se tait."} @PlayersInRadius{r=48} ~onDeath
+  Drops:
+  - exp 600
+  - Workase_Drop_Boss_Minotaur 1 1
+
+Workase_Cyclops:
+  Type: IRON_GOLEM
+  Display: '&8&lPolyphème &7— le Cyclope'
+  Health: 1200
+  Damage: 18
+  Armor: 12
+  BossBar:
+    Enabled: true
+    Title: '&8&lPolyphème le Cyclope'
+    Range: 48
+    Color: WHITE
+    Style: SEGMENTED_12
+  Options:
+    MovementSpeed: 0.26
+    KnockbackResistance: 1.0
+    PreventOtherDrops: true
+    Despawn: false
+    FollowRange: 40
+  # Un golem n'attaque pas les joueurs par défaut : on force la cible.
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Skills:
+  - 'message{m="&8Polyphème &7: &oPersonne ne m''échappe deux fois !"} @PlayersInRadius{r=48} ~onSpawn'
+  - skill{s=Workase_Cyclops_Boulder} @NearestPlayer{r=24} ~onTimer:140
+  - skill{s=Workase_Stomp} @PlayersInRadius{r=6} ~onTimer:100
+  - message{m="&8Polyphème &7s'écroule dans un fracas de pierre."} @PlayersInRadius{r=48} ~onDeath
+  Drops:
+  - exp 800
+  - Workase_Drop_Boss_Cyclops 1 1
+
+Workase_Cerberus:
+  Type: ZOGLIN
+  Display: '&4&lCerbère &7— Gardien des Enfers'
+  Health: 1500
+  Damage: 16
+  Armor: 10
+  BossBar:
+    Enabled: true
+    Title: '&4&lCerbère'
+    Range: 48
+    Color: RED
+    Style: SEGMENTED_20
+  Options:
+    MovementSpeed: 0.34
+    KnockbackResistance: 0.9
+    PreventOtherDrops: true
+    Despawn: false
+    FollowRange: 40
+  Skills:
+  - message{m="&4Trois gueules &7grondent à l'unisson. &4Cerbère &7s'éveille."} @PlayersInRadius{r=48} ~onSpawn
+  - skill{s=Workase_Cerberus_Fire} @PlayersInRadius{r=10} ~onTimer:120
+  - skill{s=Workase_Cerberus_Howl} @self ~onDamaged 0.1
+  - message{m="&4Cerbère &7retourne aux ombres d'Hadès."} @PlayersInRadius{r=48} ~onDeath
+  Drops:
+  - exp 1000
+  - Workase_Drop_Boss_Cerberus 1 1
+
+Workase_Hydra:
+  Type: ELDER_GUARDIAN
+  Display: '&3&lL''Hydre de Lerne'
+  Health: 1800
+  Damage: 15
+  Armor: 8
+  BossBar:
+    Enabled: true
+    Title: '&3&lL''Hydre de Lerne'
+    Range: 56
+    Color: BLUE
+    Style: SEGMENTED_20
+  Options:
+    KnockbackResistance: 1.0
+    PreventOtherDrops: true
+    Despawn: false
+    FollowRange: 40
+  Skills:
+  - 'message{m="&3L''Hydre &7: coupe une tête, deux repousseront..."} @PlayersInRadius{r=56} ~onSpawn'
+  - skill{s=Workase_Hydra_Regrow} @self ~onDamaged 0.06
+  - skill{s=Workase_Hydra_Venom} @PlayersInRadius{r=16} ~onTimer:160
+  - message{m="&3L'Hydre de Lerne &7sombre dans le marais."} @PlayersInRadius{r=56} ~onDeath
+  Drops:
+  - exp 1200
+  - Workase_Drop_Boss_Hydra 1 1
+
+Workase_Typhon:
+  Type: WITHER_SKELETON
+  Display: '&5&lTyphon &7— Fléau des Dieux'
+  Health: 4000
+  Damage: 22
+  Armor: 16
+  BossBar:
+    Enabled: true
+    Title: '&5&lTYPHON'
+    Range: 64
+    Color: PURPLE
+    Style: SEGMENTED_20
+  Options:
+    MovementSpeed: 0.3
+    KnockbackResistance: 1.0
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    Despawn: false
+    FollowRange: 48
+  Equipment:
+  - NETHERITE_HELMET HEAD
+  - NETHERITE_CHESTPLATE CHEST
+  - NETHERITE_SWORD HAND
+  Skills:
+  - 'message{m="&5&lTYPHON &7: &oL''Olympe tremblera sous mon règne !"} @PlayersInRadius{r=64} ~onSpawn'
+  - skill{s=Workase_Typhon_Storm} @PlayersInRadius{r=20} ~onTimer:120
+  - skill{s=Workase_Typhon_Minions} @self ~onTimer:400
+  - skill{s=Workase_Stomp} @PlayersInRadius{r=6} ~onTimer:80
+  - message{m="&eZeus &7foudroie &5Typhon &7! L'Olympe est sauvé."} @PlayersInRadius{r=64} ~onDeath
+  - lightning @self ~onDeath
+  Drops:
+  - exp 3000
+  - Workase_Drop_Boss_Typhon 1 1

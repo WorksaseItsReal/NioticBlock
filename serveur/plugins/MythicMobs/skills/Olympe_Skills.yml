@@ -1,0 +1,100 @@
+# ============================================================
+# WORKASE — L'Odyssée des Dieux : compétences des boss
+# Appelées depuis mobs/Olympe_Boss.yml. Dans une méta-compétence,
+# @target désigne la cible transmise par l'appelant.
+# ============================================================
+
+# --- Méduse ---------------------------------------------------
+Workase_Medusa_Gaze:
+  Cooldown: 8
+  Skills:
+  - message{m="&2Le regard de Méduse te pétrifie !"} @target
+  - potion{type=SLOWNESS;duration=80;level=4} @target
+  - potion{type=MINING_FATIGUE;duration=80;level=2} @target
+  - sound{s=entity.elder_guardian.curse;v=1;p=1} @target
+
+Workase_Medusa_Serpents:
+  Cooldown: 20
+  Skills:
+  - message{m="&2Les serpents de sa chevelure se détachent !"} @PlayersInRadius{r=20}
+  - summon{type=Workase_Serpent;amount=3;radius=3} @self
+
+# --- Minotaure ------------------------------------------------
+Workase_Minotaur_Charge:
+  Cooldown: 6
+  Skills:
+  - sound{s=entity.ravager.roar;v=2;p=0.8} @self
+  - lunge{velocity=2.0;velocityY=0.3} @target
+  - delay 10
+  - damage{amount=10} @PlayersInRadius{r=3}
+  - throw{velocity=8;velocityY=4} @PlayersInRadius{r=3}
+
+# Rage sous 40 % de vie (900 PV -> 360)
+Workase_Minotaur_Rage:
+  Cooldown: 60
+  Conditions:
+  - health{h=<360} true
+  Skills:
+  - message{m="&6Le Minotaure &centre en rage !"} @PlayersInRadius{r=30}
+  - potion{type=SPEED;duration=200;level=1} @self
+  - potion{type=STRENGTH;duration=200;level=1} @self
+
+# --- Cyclope / attaques lourdes partagées ---------------------
+Workase_Cyclops_Boulder:
+  Cooldown: 6
+  Skills:
+  - sound{s=entity.iron_golem.attack;v=2;p=0.6} @self
+  - delay 15
+  - effect:explosion @target
+  - damage{amount=12} @target
+  - throw{velocity=10;velocityY=6} @target
+
+Workase_Stomp:
+  Cooldown: 4
+  Skills:
+  - sound{s=entity.generic.explode;v=1;p=0.6} @self
+  - damage{amount=8} @target
+  - throw{velocity=4;velocityY=8} @target
+
+# --- Cerbère --------------------------------------------------
+Workase_Cerberus_Fire:
+  Cooldown: 6
+  Skills:
+  - message{m="&4Cerbère crache les flammes du Tartare !"} @target
+  - ignite{ticks=80} @target
+  - damage{amount=6} @target
+
+Workase_Cerberus_Howl:
+  Cooldown: 40
+  Skills:
+  - sound{s=entity.wolf.howl;v=2;p=0.5} @self
+  - message{m="&8Les ombres d'Hadès répondent à l'appel de Cerbère..."} @PlayersInRadius{r=30}
+  - summon{type=Workase_Ombre_Hades;amount=3;radius=4} @self
+
+# --- Hydre ----------------------------------------------------
+Workase_Hydra_Regrow:
+  Cooldown: 25
+  Skills:
+  - message{m="&3Deux nouvelles têtes repoussent ! L'Hydre se régénère."} @PlayersInRadius{r=40}
+  - heal{amount=80} @self
+
+Workase_Hydra_Venom:
+  Cooldown: 8
+  Skills:
+  - potion{type=POISON;duration=100;level=1} @target
+  - damage{amount=4} @target
+
+# --- Typhon ---------------------------------------------------
+Workase_Typhon_Storm:
+  Cooldown: 6
+  Skills:
+  - message{m="&5Typhon déchaîne la tempête !"} @target
+  - lightning @target
+  - damage{amount=10} @target
+
+Workase_Typhon_Minions:
+  Cooldown: 20
+  Skills:
+  - message{m="&5Typhon appelle ses monstres !"} @PlayersInRadius{r=40}
+  - summon{type=Workase_Harpie;amount=2;radius=5} @self
+  - summon{type=Workase_Hoplite_Mort;amount=2;radius=5} @self

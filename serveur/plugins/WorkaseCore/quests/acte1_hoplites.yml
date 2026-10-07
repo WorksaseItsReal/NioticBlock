@@ -1,0 +1,21 @@
+# Quête — Les Hoplites Déchus
+# Fichier chargé depuis plugins/WorkaseCore/quests/
+
+id: acte1_hoplites
+name: "Les Hoplites Déchus"
+description: >
+  Des guerriers morts se relèvent sur les côtes.
+  Athènes paie ceux qui les renvoient au repos.
+auto_start: false
+
+objectives:
+  - id: kill_hoplites
+    type: kill
+    target: Workase_Hoplite_Mort
+    amount: 10
+    description: "Abats 10 hoplites déchus"
+
+rewards:
+  xp: 200
+  drachmes: 100
+  title: "Gardien des Rivages"

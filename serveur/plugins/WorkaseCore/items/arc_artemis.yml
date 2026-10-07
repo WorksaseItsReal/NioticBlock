@@ -1,0 +1,10 @@
+id: arc_artemis
+display_name: "<gold><bold>Arc d'Artémis</bold>"
+material: BOW
+rarity: LEGENDAIRE
+lore:
+  - "<gray>Il ne manque jamais une proie"
+  - "<gray>que la chasseresse a désignée."
+  - ""
+  - "<dark_gray>Rareté: <yellow>Légendaire"
+  - "<dark_gray>Stub — effets à venir"

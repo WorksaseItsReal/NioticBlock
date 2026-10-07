@@ -1,0 +1,8 @@
+# Boss — Marais de Lerne (spawn MythicMobs : Workase_Hydra)
+
+id: hydra
+display_name: L'Hydre de Lerne
+description: >
+  Serpent d'eau aux têtes innombrables, deuxième travail d'Héraclès.
+  Elle se régénère tant qu'on ne frappe pas assez vite.
+mythic_mob_id: Workase_Hydra
